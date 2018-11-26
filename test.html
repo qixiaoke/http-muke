@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>http</title>
+</head>
+<body>
+    <!-- <script>
+        var xhr = new XMLHttpRequest()
+        xhr.open('GET', 'http://127.0.0.1:8887')
+        xhr.send()
+    </script> -->
+    <!-- <script src='http://127.0.0.1:8887'></script> -->
+    <script>
+        fetch("http://localhost:8887", {
+            method:'PUT',
+            headers:{
+                'X-Test-Cors':'123'
+            }
+        })
+    </script>
+</body>
+</html>
